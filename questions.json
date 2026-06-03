@@ -138,5 +138,147 @@
       "B"
     ],
     "explanation": "A flow in Power Automate represents an automated workflow that runs task logic in response to a specific trigger, schedule, or manual button click."
+  },
+  {
+    "id": "Q11",
+    "question": "Which component defines when a Power Automate flow starts?",
+    "options": {
+      "A": "Action",
+      "B": "Connector",
+      "C": "Trigger",
+      "D": "Condition"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Triggers define when a flow starts."
+  },
+  {
+    "id": "Q12",
+    "question": "Which flow runs automatically when an event occurs?",
+    "options": {
+      "A": "Instant flow",
+      "B": "Scheduled flow",
+      "C": "Automated flow",
+      "D": "Desktop flow"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Automated flows start when an event occurs."
+  },
+  {
+    "id": "Q13",
+    "question": "Which flow is manually triggered by a user?",
+    "options": {
+      "A": "Automated",
+      "B": "Instant",
+      "C": "Scheduled",
+      "D": "Approval"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Instant flows are manually triggered."
+  },
+  {
+    "id": "Q14",
+    "question": "Which flow runs at a fixed time every day?",
+    "options": {
+      "A": "Automated",
+      "B": "Instant",
+      "C": "Scheduled",
+      "D": "Desktop"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Scheduled flows run at defined times."
+  },
+  {
+    "id": "Q15",
+    "question": "What is Microsoft Dataverse?",
+    "options": {
+      "A": "Reporting tool",
+      "B": "File storage",
+      "C": "Cloud data platform",
+      "D": "Workflow engine"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Dataverse is a secure cloud-based data platform."
+  },
+  {
+    "id": "Q16",
+    "question": "Which objects are used to store data in Dataverse? (Select all that apply)",
+    "options": {
+      "A": "Tables",
+      "B": "Rows",
+      "C": "Columns",
+      "D": "Worksheets"
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Dataverse stores data in tables, rows, and columns."
+  },
+  {
+    "id": "Q17",
+    "question": "Which feature controls access to Dataverse data?",
+    "options": {
+      "A": "Dashboards",
+      "B": "Security roles",
+      "C": "Templates",
+      "D": "Power Fx"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Security roles define who can access Dataverse data."
+  },
+  {
+    "id": "Q18",
+    "question": "Dataverse is best suited for which scenario?",
+    "options": {
+      "A": "Personal notes",
+      "B": "Secure multi-user apps",
+      "C": "Temporary files",
+      "D": "Image editing"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Dataverse is ideal for secure multi-user business applications."
+  },
+  {
+    "id": "Q19",
+    "question": "Dataverse requires which license type?",
+    "options": {
+      "A": "Free",
+      "B": "Trial only",
+      "C": "Premium",
+      "D": "None"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Dataverse is a premium data source."
+  },
+  {
+    "id": "Q20",
+    "question": "Which tool is used to create Power BI reports?",
+    "options": {
+      "A": "Power BI Service",
+      "B": "Power BI Desktop",
+      "C": "Power Apps",
+      "D": "Excel"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Reports are created in Power BI Desktop."
   }
 ]
