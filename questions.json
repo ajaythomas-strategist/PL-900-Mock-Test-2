@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q1",
+    "question": "What is the primary purpose of Microsoft Power Platform?",
+    "options": {
+      "A": "Software development using full code",
+      "B": "Managing hardware infrastructure",
+      "C": "Creating business solutions using low-code tools",
+      "D": "Operating system development"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power Platform enables users to create business solutions using low-code tools such as Power Apps, Power Automate, and Power BI."
+  },
+  {
+    "id": "Q2",
+    "question": "Which Power Platform component is used to analyze data and create reports?",
+    "options": {
+      "A": "Power Apps",
+      "B": "Power Automate",
+      "C": "Power BI",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power BI is used for data visualization, reporting, and analytics."
+  },
+  {
+    "id": "Q3",
+    "question": "Which components are part of Microsoft Power Platform? (Select all that apply)",
+    "options": {
+      "A": "Power Apps",
+      "B": "Power BI",
+      "C": "Power Automate",
+      "D": "Azure DevOps"
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Power Apps, Power BI, and Power Automate are core Power Platform components. Azure DevOps is a separate developer services suite."
+  },
+  {
+    "id": "Q4",
+    "question": "Which Power Apps type provides full control over the user interface layout?",
+    "options": {
+      "A": "Model-driven app",
+      "B": "Canvas app",
+      "C": "Power Pages",
+      "D": "Cards for Power Apps"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Canvas apps provide full user interface control, allowing a drag-and-drop 'canvas' design that is pixel-perfect."
+  },
+  {
+    "id": "Q5",
+    "question": "Which Power Apps type requires Dataverse?",
+    "options": {
+      "A": "Canvas app",
+      "B": "SharePoint app",
+      "C": "Model-driven app",
+      "D": "Excel-based app"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Model-driven apps are built directly on top of Microsoft Dataverse and require it as their data source."
+  }
+]
