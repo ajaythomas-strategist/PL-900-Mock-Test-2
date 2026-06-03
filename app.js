@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const scoreBreakdownText = document.getElementById("score-breakdown-text");
   const statTimeSpent = document.getElementById("stat-time-spent");
   const statCorrectCount = document.getElementById("stat-correct-count");
-  const statSyncStatus = document.getElementById("stat-sync-status");
   const reviewList = document.getElementById("review-list");
   
   const startExamBtn = document.getElementById("start-exam-btn");
@@ -449,8 +448,8 @@ document.addEventListener("DOMContentLoaded", () => {
       renderDetailedReview();
     }, "result-heading");
 
-    // Push to Google Sheets API Hook
-    uploadToGoogleSheets(totalScore, timeSpentStr, passed);
+    // Persist score to local history
+    saveScoreToLocalHistory(totalScore, timeSpentStr, passed);
   }
 
   function renderDetailedReview() {
@@ -533,14 +532,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --- GOOGLE SHEETS SYNC HOOK ---
-  function uploadToGoogleSheets(score, timeSpent, passed) {
-    console.log(`[Google Sheets API Sync] Attempting to sync score...`);
+  // --- LOCAL HISTORY PERSISTENCE ---
+  function saveScoreToLocalHistory(score, timeSpent, passed) {
+    console.log(`[Local History] Saving score locally...`);
     console.log(`Score: ${score}/100 | Time Spent: ${timeSpent} | Result: ${passed ? "PASS" : "FAIL"}`);
     
-    statSyncStatus.textContent = "Syncing...";
-    
-    // We will save to localStorage for historical persistence
     try {
       const history = JSON.parse(localStorage.getItem("pl900_mock_history") || "[]");
       history.push({
@@ -553,21 +549,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
       console.warn("Could not persist score to localStorage:", err);
     }
-
-    // In a live integration, we would perform a fetch request to a Google Apps Script Web App Endpoint.
-    // Example:
-    // fetch('https://script.google.com/macros/s/XXX/exec', {
-    //   method: 'POST',
-    //   mode: 'no-cors',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ score, timeSpent, passed, date: new Date().toLocaleDateString() })
-    // })
-    
-    // Simulated fetch call representing connection hooks:
-    setTimeout(() => {
-      statSyncStatus.innerHTML = `<span style="color: var(--success); font-weight: 700;">Score Logged</span>`;
-      console.log(`[Google Sheets API Sync] Score successfully saved locally. Connect your spreadsheet web app script URL in app.js:L530 when available.`);
-    }, 1500);
   }
 
   function restartExam() {
