@@ -280,5 +280,150 @@
       "B"
     ],
     "explanation": "Reports are created in Power BI Desktop."
+  },
+  {
+    "id": "Q21",
+    "question": "Where are Power BI dashboards created?",
+    "options": {
+      "A": "Desktop",
+      "B": "Service",
+      "C": "Excel",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Dashboards are created in Power BI Service."
+  },
+  {
+    "id": "Q22",
+    "question": "Which license is required to share Power BI reports?",
+    "options": {
+      "A": "Free",
+      "B": "Pro",
+      "C": "Premium only",
+      "D": "Trial"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Power BI Pro is required for sharing."
+  },
+  {
+    "id": "Q23",
+    "question": "What is AI Builder used for?",
+    "options": {
+      "A": "Coding AI models",
+      "B": "Database design",
+      "C": "Adding AI without code",
+      "D": "App deployment"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "AI Builder adds AI capabilities without coding."
+  },
+  {
+    "id": "Q24",
+    "question": "Which AI Builder model extracts data from invoices?",
+    "options": {
+      "A": "Prediction",
+      "B": "Object detection",
+      "C": "Form processing",
+      "D": "OCR"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Form processing extracts structured data from documents."
+  },
+  {
+    "id": "Q25",
+    "question": "AI Builder works with which services? (Select all that apply)",
+    "options": {
+      "A": "Power Apps",
+      "B": "Power Automate",
+      "C": "Visual Studio",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "AI Builder integrates with Power Apps, Power Automate, and Dataverse."
+  },
+  {
+    "id": "Q26",
+    "question": "What is the purpose of DLP policies?",
+    "options": {
+      "A": "Improve performance",
+      "B": "Control data sharing",
+      "C": "Create reports",
+      "D": "Design UI"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "DLP policies prevent data leakage between connectors."
+  },
+  {
+    "id": "Q27",
+    "question": "Which connector groups exist in DLP? (Select all that apply)",
+    "options": {
+      "A": "Business",
+      "B": "Non-business",
+      "C": "Blocked",
+      "D": "Premium"
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "DLP uses Business, Non-business, and Blocked groups."
+  },
+  {
+    "id": "Q28",
+    "question": "Which rule is enforced by DLP policies?",
+    "options": {
+      "A": "All connectors can mix",
+      "B": "Business and non-business cannot mix",
+      "C": "Only blocked connectors work",
+      "D": "No restrictions"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Business and non-business connectors cannot be used together."
+  },
+  {
+    "id": "Q29",
+    "question": "DLP policies apply to which services?",
+    "options": {
+      "A": "Power Apps",
+      "B": "Power Automate",
+      "C": "Power BI Desktop",
+      "D": "Excel"
+    },
+    "correctAnswer": [
+      "A",
+      "B"
+    ],
+    "explanation": "DLP applies to Power Apps and Power Automate."
+  },
+  {
+    "id": "Q30",
+    "question": "Which combination is correct for app + data + automation?",
+    "options": {
+      "A": "Power BI + Excel",
+      "B": "Power Apps + Dataverse + Power Automate",
+      "C": "Power Apps + Power BI",
+      "D": "AI Builder only"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Power Apps builds apps, Dataverse stores data, Power Automate automates processes."
   }
 ]
