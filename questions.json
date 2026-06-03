@@ -425,5 +425,209 @@
       "B"
     ],
     "explanation": "Power Apps builds apps, Dataverse stores data, Power Automate automates processes."
+  },
+  {
+    "id": "Q31",
+    "question": "Which component is best for approval workflows?",
+    "options": {
+      "A": "Power BI",
+      "B": "Power Apps",
+      "C": "Power Automate",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power Automate is used for approvals."
+  },
+  {
+    "id": "Q32",
+    "question": "Which feature separates development and production?",
+    "options": {
+      "A": "Dashboards",
+      "B": "Environments",
+      "C": "DLP",
+      "D": "Connectors"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Environments separate resources and data."
+  },
+  {
+    "id": "Q33",
+    "question": "Power BI dashboards are:",
+    "options": {
+      "A": "Multi-page",
+      "B": "Single-page",
+      "C": "Editable in Desktop",
+      "D": "Created in Excel"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Dashboards are single-page and created in the service."
+  },
+  {
+    "id": "Q34",
+    "question": "Model-driven apps can be created without Dataverse.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Model-driven apps always require Dataverse."
+  },
+  {
+    "id": "Q35",
+    "question": "AI Builder requires machine learning expertise.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "AI Builder is low-code and does not require ML skills."
+  },
+  {
+    "id": "Q36",
+    "question": "Which tool prevents company data from going to personal services?",
+    "options": {
+      "A": "Security roles",
+      "B": "AI Builder",
+      "C": "DLP policies",
+      "D": "Power Fx"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "DLP policies prevent data leakage."
+  },
+  {
+    "id": "Q37",
+    "question": "Power BI Free users can share reports.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Sharing requires Power BI Pro."
+  },
+  {
+    "id": "Q38",
+    "question": "Which flow uses triggers and actions?",
+    "options": {
+      "A": "Power Apps",
+      "B": "Power BI",
+      "C": "Power Automate",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power Automate flows use triggers and actions."
+  },
+  {
+    "id": "Q39",
+    "question": "Which component stores relational business data?",
+    "options": {
+      "A": "Excel",
+      "B": "SharePoint",
+      "C": "Dataverse",
+      "D": "Power BI"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Dataverse stores relational business data."
+  },
+  {
+    "id": "Q40",
+    "question": "Which Power Platform component adds intelligence?",
+    "options": {
+      "A": "Power BI",
+      "B": "Power Apps",
+      "C": "AI Builder",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "AI Builder adds AI capabilities."
+  },
+  {
+    "id": "Q41",
+    "question": "Which component visualizes KPIs?",
+    "options": {
+      "A": "Power Automate",
+      "B": "Power Apps",
+      "C": "Power BI",
+      "D": "AI Builder"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power BI visualizes KPIs."
+  },
+  {
+    "id": "Q42",
+    "question": "What starts a Power Automate flow?",
+    "options": {
+      "A": "Action",
+      "B": "Trigger",
+      "C": "Condition",
+      "D": "Connector"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Triggers start flows."
+  },
+  {
+    "id": "Q43",
+    "question": "Which Power Apps feature enforces data rules without code?",
+    "options": {
+      "A": "Power Fx",
+      "B": "Business rules",
+      "C": "DLP",
+      "D": "Connectors"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Business rules enforce logic without code."
+  },
+  {
+    "id": "Q44",
+    "question": "Which tool is best for data entry apps?",
+    "options": {
+      "A": "Power BI",
+      "B": "Power Apps",
+      "C": "Power Automate",
+      "D": "AI Builder"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Power Apps is best for data entry."
+  },
+  {
+    "id": "Q45",
+    "question": "PL-900 is which level of certification?",
+    "options": {
+      "A": "Advanced",
+      "B": "Expert",
+      "C": "Fundamentals",
+      "D": "Developer"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "PL-900 is a fundamentals-level certification."
   }
 ]
