@@ -231,11 +231,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const fillPercent = ((currentQuestionIndex + 1) / questions.length) * 100;
     progressBarFill.style.width = `${fillPercent}%`;
     
-    // Set question text
-    questionText.textContent = `${q.id}. ${q.question}`;
-    
     // Check if multi-select
     const isMultiSelect = q.correctAnswer.length > 1;
+    
+    // Set question text
+    if (isMultiSelect) {
+      questionText.innerHTML = `${q.id}. ${q.question} <span class="select-all-apply" style="display: block; font-size: 15px; font-weight: 500; color: var(--text-muted); margin-top: 8px;">(Select all that apply)</span>`;
+    } else {
+      questionText.textContent = `${q.id}. ${q.question}`;
+    }
     
     // Render options
     optionsContainer.innerHTML = "";
@@ -482,7 +486,11 @@ document.addEventListener("DOMContentLoaded", () => {
       
       const qText = document.createElement("h3");
       qText.className = "review-question-text";
-      qText.textContent = q.question;
+      if (q.correctAnswer.length > 1) {
+        qText.innerHTML = `${q.question} <span class="select-all-apply" style="display: block; font-size: 14px; font-weight: 500; color: var(--text-muted); margin-top: 6px;">(Select all that apply)</span>`;
+      } else {
+        qText.textContent = q.question;
+      }
       
       const optionsDiv = document.createElement("div");
       optionsDiv.className = "review-options";
