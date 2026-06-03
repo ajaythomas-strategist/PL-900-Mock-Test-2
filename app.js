@@ -25,10 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerStatus = document.getElementById("header-status");
   const timerDisplay = document.getElementById("timer-display");
   const timerCard = document.getElementById("timer-card");
-  const weightBadge = document.getElementById("weight-badge");
   
   const questionProgressText = document.getElementById("question-progress-text");
-  const questionWeightText = document.getElementById("question-weight-text");
   const progressBarFill = document.getElementById("progress-bar-fill");
   const questionText = document.getElementById("question-text");
   const optionsContainer = document.getElementById("options-container");
@@ -227,16 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Header updates
     questionProgressText.textContent = `Question ${currentQuestionIndex + 1} of 45`;
-    questionWeightText.textContent = `Value: ${weight} Marks`;
-    if (weight === 3) {
-      questionWeightText.className = "weight-indicator complex";
-      weightBadge.textContent = "3 Marks";
-      weightBadge.className = "weight-badge complex";
-    } else {
-      questionWeightText.className = "weight-indicator";
-      weightBadge.textContent = "2 Marks";
-      weightBadge.className = "weight-badge";
-    }
     
     // Progress bar fill percentage
     const fillPercent = ((currentQuestionIndex + 1) / questions.length) * 100;
