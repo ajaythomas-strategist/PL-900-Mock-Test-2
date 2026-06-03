@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Power Platform PL-900 Mock Test 2</title>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Vanilla CSS stylesheet link -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- HEADER BAR -->
+    <header class="app-header" id="app-header">
+      <div class="header-logo">
+        <svg width="24" height="24" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 0H11V11H0V0Z" fill="#F25022"/>
+          <path d="M12 0H23V11H12V0Z" fill="#7FBA00"/>
+          <path d="M0 12H11V23H0V12Z" fill="#00A4EF"/>
+          <path d="M12 12H23V23H12V12Z" fill="#FFB900"/>
+        </svg>
+        <span class="logo-text">PL-900 Mock Test 2</span>
+      </div>
+      <div class="header-status" id="header-status" style="display: none;">
+        <div class="weight-badge" id="weight-badge">2 Marks</div>
+        <div class="timer-card" id="timer-card">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="timer-icon">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="timer-display" aria-label="Remaining time">50:00</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN VIEW AREA -->
+    <main class="app-main" id="app-main">
+      
+      <!-- HOME / INSTRUCTION SCREEN -->
+      <section class="view-card active" id="home-view" aria-labelledby="home-heading">
+        <div class="home-hero">
+          <h1 id="home-heading">PL-900: Microsoft Power Platform Fundamentals</h1>
+          <p class="subtitle">Validate your cloud knowledge and prepare for the official certification with Mock Test 2.</p>
+        </div>
+        
+        <div class="rules-grid">
+          <div class="rule-card">
+            <div class="rule-icon info-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            </div>
+            <h3>Total Questions</h3>
+            <p class="rule-value">45 Questions</p>
+            <p class="rule-desc">Single-select &amp; multi-select scenarios</p>
+          </div>
+          
+          <div class="rule-card">
+            <div class="rule-icon info-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>Exam Duration</h3>
+            <p class="rule-value">50 Minutes</p>
+            <p class="rule-desc">Time limit with auto-submission</p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-icon info-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3>Passing Mark</h3>
+            <p class="rule-value">84% Required</p>
+            <p class="rule-desc">84 out of 100 maximum marks</p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-icon info-teal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3>Weighted Scoring</h3>
+            <p class="rule-value">100 Marks Max</p>
+            <p class="rule-desc">35 questions at 2 marks, 10 complex questions at 3 marks</p>
+          </div>
+        </div>
+
+        <div class="home-instructions">
+          <h2>Exam Instructions</h2>
+          <ul>
+            <li>Once you click <strong>Start Exam</strong>, the 50-minute timer will begin immediately and cannot be paused.</li>
+            <li>Questions are presented one by one. You can jump directly to any question using the grid palette.</li>
+            <li>You can mark questions for review; they will show up flagged in the grid palette for easy access.</li>
+            <li>Multi-select questions will display square checkboxes. Single-select questions will display round radio buttons.</li>
+            <li>If you do not finish within 50 minutes, your answers will be automatically submitted for grading.</li>
+            <li>Your score and completion time will be registered at the end.</li>
+          </ul>
+        </div>
+
+        <div class="action-footer">
+          <button class="btn btn-primary btn-large" id="start-exam-btn">Start Exam</button>
+        </div>
+      </section>
+
+      <!-- EXAM ENGINE SCREEN -->
+      <section class="view-card" id="quiz-view" style="display: none;" aria-labelledby="quiz-heading">
+        <div class="quiz-layout">
+          
+          <!-- Question Container -->
+          <div class="question-column">
+            
+            <div class="progress-bar-container">
+              <div class="progress-info">
+                <span id="question-progress-text">Question 1 of 45</span>
+                <span class="weight-indicator" id="question-weight-text">Value: 2 Marks</span>
+              </div>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="progress-bar-fill" style="width: 2.2%;"></div>
+              </div>
+            </div>
+
+            <div class="question-card" id="question-card">
+              <h2 class="question-text" id="question-text" tabindex="-1">Question text placeholder</h2>
+              <div class="options-container" id="options-container">
+                <!-- Options rendered dynamically -->
+              </div>
+            </div>
+
+            <div class="navigation-controls">
+              <div class="left-nav">
+                <button class="btn btn-secondary" id="prev-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                  <span>Previous</span>
+                </button>
+                <button class="btn btn-secondary" id="next-btn">
+                  <span>Next</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+              
+              <div class="right-nav">
+                <button class="btn btn-tertiary" id="review-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flag-icon"><polygon points="6 2 18 2 18 12 6 12 6 2"></polygon><line x1="6" y1="22" x2="6" y2="12"></line></svg>
+                  <span id="review-btn-text">Mark for Review</span>
+                </button>
+                <button class="btn btn-danger" id="submit-exam-btn">Submit Exam</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Palette -->
+          <aside class="sidebar-column" aria-label="Question Navigator">
+            <div class="palette-card">
+              <div class="palette-header">
+                <h3>Question Navigator</h3>
+                <span class="palette-count" id="palette-count">0/45 Answered</span>
+              </div>
+              <div class="palette-grid" id="palette-grid">
+                <!-- Question buttons 1-45 generated dynamically -->
+              </div>
+              <div class="palette-legend">
+                <div class="legend-item"><span class="legend-dot status-current"></span> Current</div>
+                <div class="legend-item"><span class="legend-dot status-answered"></span> Answered</div>
+                <div class="legend-item"><span class="legend-dot status-review"></span> Review</div>
+                <div class="legend-item"><span class="legend-dot status-unanswered"></span> Unanswered</div>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <!-- RESULTS & PERFORMANCE SCREEN -->
+      <section class="view-card" id="result-view" style="display: none;" aria-labelledby="result-heading">
+        <div class="results-layout">
+          
+          <div class="result-header-card" id="result-banner">
+            <h1 id="result-heading">Exam Complete!</h1>
+            <div class="badge-status-container">
+              <div class="result-status-badge" id="result-status-badge">PASSED</div>
+            </div>
+            
+            <div class="score-circle-container">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <path class="circle" id="score-percentage-circle" stroke-dasharray="84, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                <text x="18" y="20.35" class="percentage" id="score-percentage-text">84%</text>
+              </svg>
+            </div>
+            
+            <p class="score-breakdown-text" id="score-breakdown-text">You scored 84 out of 100 marks.</p>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-label">Time Spent</span>
+              <span class="stat-value" id="stat-time-spent">25 mins 40 secs</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Correct Answers</span>
+              <span class="stat-value" id="stat-correct-count">38 / 45</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Required Score</span>
+              <span class="stat-value">84%</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Sheets Sync</span>
+              <span class="stat-value" id="stat-sync-status">Pending sync...</span>
+            </div>
+          </div>
+
+          <div class="review-section">
+            <div class="review-header">
+              <h2>Detailed Answer Review</h2>
+              <p>Review each question below to check correct answers and logical explanations.</p>
+            </div>
+            <div class="review-list" id="review-list">
+              <!-- Detail reviews injected dynamically -->
+            </div>
+          </div>
+
+          <div class="action-footer">
+            <button class="btn btn-primary btn-large" id="restart-btn">Restart Test</button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- CONFIRMATION MODAL -->
+    <div class="modal-overlay" id="confirm-modal" aria-hidden="true" style="display: none;">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
+        <h2 id="modal-title">Submit Exam?</h2>
+        <p id="modal-desc">Are you sure you want to submit your exam for grading? You still have time remaining.</p>
+        <div class="modal-warning" id="modal-unanswered-warning" style="display: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span id="unanswered-count-text">You have 5 unanswered questions.</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-secondary" id="modal-cancel-btn">Cancel</button>
+          <button class="btn btn-danger" id="modal-confirm-btn">Yes, Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Core Javascript code -->
+  <script src="app.js"></script>
+</body>
+</html>
