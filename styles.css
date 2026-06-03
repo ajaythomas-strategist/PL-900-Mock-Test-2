@@ -397,7 +397,7 @@ button, input, select {
    ========================================================================== */
 .quiz-layout {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 300px 1fr;
   gap: 32px;
 }
 
@@ -612,9 +612,7 @@ button, input, select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--neutral-border);
+  margin-bottom: 12px;
 }
 
 .palette-header h3 {
@@ -631,6 +629,27 @@ button, input, select {
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--neutral-border);
+}
+
+.palette-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--neutral-border);
+}
+
+.palette-sub-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.review-count-badge {
+  background-color: var(--accent-light) !important;
+  color: hsl(36, 100%, 35%) !important;
+  border-color: hsl(36, 100%, 85%) !important;
 }
 
 .palette-grid {

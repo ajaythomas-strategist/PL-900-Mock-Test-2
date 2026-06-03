@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const paletteGrid = document.getElementById("palette-grid");
   const paletteCountText = document.getElementById("palette-count");
+  const paletteReviewCountText = document.getElementById("palette-review-count");
   
   const confirmModal = document.getElementById("confirm-modal");
   const modalCancelBtn = document.getElementById("modal-cancel-btn");
@@ -213,6 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     paletteCountText.textContent = `${answeredCount}/45 Answered`;
+    paletteReviewCountText.textContent = `${markedForReview.size} Review`;
   }
 
   function getQuestionWeight(q) {
@@ -287,8 +289,10 @@ document.addEventListener("DOMContentLoaded", () => {
     prevBtn.disabled = currentQuestionIndex === 0;
     if (currentQuestionIndex === questions.length - 1) {
       nextBtn.style.display = "none";
+      submitExamBtn.style.display = "inline-flex";
     } else {
       nextBtn.style.display = "inline-flex";
+      submitExamBtn.style.display = "none";
     }
     
     // Update review button status

@@ -105,6 +105,29 @@
       <section class="view-card" id="quiz-view" style="display: none;" aria-labelledby="quiz-heading">
         <div class="quiz-layout">
           
+          <!-- Sidebar Palette -->
+          <aside class="sidebar-column" aria-label="Question Navigator">
+            <div class="palette-card">
+              <div class="palette-header">
+                <h3>Question Navigator</h3>
+                <span class="palette-count" id="palette-count">0/45 Answered</span>
+              </div>
+              <div class="palette-sub-header">
+                <span class="palette-sub-title">No. of Review Questions</span>
+                <span class="palette-count review-count-badge" id="palette-review-count">0 Review</span>
+              </div>
+              <div class="palette-grid" id="palette-grid">
+                <!-- Question buttons 1-45 generated dynamically -->
+              </div>
+              <div class="palette-legend">
+                <div class="legend-item"><span class="legend-dot status-current"></span> Current</div>
+                <div class="legend-item"><span class="legend-dot status-answered"></span> Answered</div>
+                <div class="legend-item"><span class="legend-dot status-review"></span> Review</div>
+                <div class="legend-item"><span class="legend-dot status-unanswered"></span> Unanswered</div>
+              </div>
+            </div>
+          </aside>
+
           <!-- Question Container -->
           <div class="question-column">
             
@@ -141,29 +164,10 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flag-icon"><polygon points="6 2 18 2 18 12 6 12 6 2"></polygon><line x1="6" y1="22" x2="6" y2="12"></line></svg>
                   <span id="review-btn-text">Mark for Review</span>
                 </button>
-                <button class="btn btn-danger" id="submit-exam-btn">Submit Exam</button>
+                <button class="btn btn-danger" id="submit-exam-btn" style="display: none;">Submit Exam</button>
               </div>
             </div>
           </div>
-
-          <!-- Sidebar Palette -->
-          <aside class="sidebar-column" aria-label="Question Navigator">
-            <div class="palette-card">
-              <div class="palette-header">
-                <h3>Question Navigator</h3>
-                <span class="palette-count" id="palette-count">0/45 Answered</span>
-              </div>
-              <div class="palette-grid" id="palette-grid">
-                <!-- Question buttons 1-45 generated dynamically -->
-              </div>
-              <div class="palette-legend">
-                <div class="legend-item"><span class="legend-dot status-current"></span> Current</div>
-                <div class="legend-item"><span class="legend-dot status-answered"></span> Answered</div>
-                <div class="legend-item"><span class="legend-dot status-review"></span> Review</div>
-                <div class="legend-item"><span class="legend-dot status-unanswered"></span> Unanswered</div>
-              </div>
-            </div>
-          </aside>
 
         </div>
       </section>
