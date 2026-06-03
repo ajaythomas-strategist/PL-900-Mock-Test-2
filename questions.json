@@ -70,5 +70,73 @@
       "C"
     ],
     "explanation": "Model-driven apps are built directly on top of Microsoft Dataverse and require it as their data source."
+  },
+  {
+    "id": "Q6",
+    "question": "Which language is used to add logic in Power Apps?",
+    "options": {
+      "A": "JavaScript",
+      "B": "Python",
+      "C": "Power Fx",
+      "D": "DAX"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power Fx is the low-code formula language used to express logic and formulas across Microsoft Power Apps."
+  },
+  {
+    "id": "Q7",
+    "question": "A company wants to build a mobile app for employees to submit leave requests. Which component should be used?",
+    "options": {
+      "A": "Power BI",
+      "B": "Power Automate",
+      "C": "Power Apps",
+      "D": "AI Builder"
+    },
+    "correctAnswer": [
+      "C"
+    ],
+    "explanation": "Power Apps is used to build user-facing mobile and web business applications. While Power Automate is often used to run the leave approval workflow in the background, the actual mobile app interface is built with Power Apps."
+  },
+  {
+    "id": "Q8",
+    "question": "Sharing a Power App with a user automatically gives access to the underlying data source.",
+    "options": {
+      "A": "True",
+      "B": "False"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "Sharing the app interface does not grant permissions to the underlying data source (such as SharePoint lists, SQL Server databases, or Dataverse tables). Users must be assigned appropriate permissions to the data source separately."
+  },
+  {
+    "id": "Q9",
+    "question": "Which data source is the preferred and native platform for Power Apps?",
+    "options": {
+      "A": "Excel",
+      "B": "SharePoint",
+      "C": "SQL Server",
+      "D": "Dataverse"
+    },
+    "correctAnswer": [
+      "D"
+    ],
+    "explanation": "Dataverse is the native, cloud-based data platform for the Microsoft Power Platform, providing rich security, metadata, and relationship capabilities."
+  },
+  {
+    "id": "Q10",
+    "question": "What is a flow in Power Automate?",
+    "options": {
+      "A": "A report",
+      "B": "An automated workflow",
+      "C": "A database",
+      "D": "A mobile app"
+    },
+    "correctAnswer": [
+      "B"
+    ],
+    "explanation": "A flow in Power Automate represents an automated workflow that runs task logic in response to a specific trigger, schedule, or manual button click."
   }
 ]
