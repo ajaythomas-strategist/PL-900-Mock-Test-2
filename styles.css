@@ -573,22 +573,27 @@ button, input, select {
 
 /* Navigation Controls */
 .navigation-controls {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-top: 24px;
   border-top: 1px solid var(--neutral-border);
   gap: 16px;
-  flex-wrap: wrap;
 }
 
 .left-nav {
   display: flex;
-  gap: 12px;
+  justify-content: flex-start;
+}
+
+.center-nav {
+  display: flex;
+  justify-content: center;
 }
 
 .right-nav {
   display: flex;
+  justify-content: flex-end;
   gap: 12px;
 }
 
@@ -1134,17 +1139,20 @@ button, input, select {
   }
 
   .navigation-controls {
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 12px;
     align-items: stretch;
   }
 
-  .left-nav, .right-nav {
-    justify-content: space-between;
+  .left-nav, .center-nav, .right-nav {
+    justify-content: stretch;
     width: 100%;
   }
 
   .btn {
     flex-grow: 1;
+    width: 100%;
   }
 
   .stats-row {
